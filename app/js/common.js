@@ -4,8 +4,8 @@ $(document).ready(function(){
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		dots: true,
-		nextArrow: '<button type="button" class="slick-prev"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>',
-		prevArrow: '<button type="button" class="slick-next"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>'
+		nextArrow: '<button type="button" class="slick-prev"></button>',
+		prevArrow: '<button type="button" class="slick-next"></button>'
 	});
 	
   });

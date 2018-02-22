@@ -166,10 +166,12 @@ body
 	width: 100%
 
 .header-carousel
+	position: relative
 	background-color: #fff
 	box-shadow: -4px 7px 18px rgba(0, 0, 0, 0.2), inset 0 4px 0 #43aa26
 	border-top: 2px solid $accent
 	transform: translateY(50%)
+	z-index: 0
 	&__item
 		padding: 30px
 	&__title
@@ -181,5 +183,55 @@ body
 	&__text
 		color: $textColor	
 		font-weight: 400
+
+//Slic slider buttons
+
+.slick-prev,
+.slick-next
+	position: absolute
+    display: block
+	top: 45%
+	background-color: #ffffff
+	width: 25px
+	height: 25px
+	border: 0
+	cursor: pointer
+	transform: rotate(-45deg)		
+	z-index: 2
+	transition: all .3s ease
+	&:hover
+		background-color: $accent
+		color: #ffffff
+	&:focus
+		outline: none
+	&:after
+		position: absolute		
+		display: block
+		font-family: fontawesome
+		font-size: 17px	
+.slick-prev
+	right: -12px
+	&:after		
+		content: '\f054'		
+		transform: rotate(45deg)
+		bottom: 0    	
+		right: 0
+		top: 5px
+		
+	
+.slick-next
+	left: -12.5px
+	&:after
+		content: '\f053'		
+		transform: rotate(45deg)
+		bottom: 2px
+		left: 1px
+    	
+	
+	
+
+		
+
+	
 
 @import "media" // Всегда в конце
