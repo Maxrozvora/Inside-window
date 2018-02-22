@@ -2,6 +2,7 @@
 @import "libs"
 @import "vars"
 
+
 *
 	-webkit-box-sizing: border-box
 	-moz-box-sizing: border-box
@@ -36,15 +37,19 @@ body textarea:required:valid
 
 html, body
 	height: 100%
+	padding: 0
+	margin: 0
 
 body
-	font-size: 16px
+	font-size: 14px
 	min-width: 320px
 	position: relative
+	color: $textColor
 	line-height: 1.65
 	font-family: $default-font
 	overflow-x: hidden
 	opacity: 1
+	
 
 .img-responsive
 	display: block
@@ -53,5 +58,106 @@ body
 
 .text-center
 	text-align: center
+
+
+// Header section
+.header
+	padding: 20px 0
+.logo
+	display: flex
+	align-items: center
+	&__img
+		width: 48px
+		height: 47px
+	&__text
+		color: #4f555a
+		font-family: "roboto"
+		font-size: 26px
+		font-weight: 800
+		text-transform: uppercase
+		margin-left: 8px
+
+
+		
+.telephone
+	font-family: Cuprum
+	font-size: 26px
+	font-weight: 400
+	text-transform: uppercase
+	white-space: nowrap
+
+.btn-block
+	display: flex
+	justify-content: flex-end
+	&__btn	
+		display: inline-block
+		border: none
+		color: #fff
+		text-decoration: none
+		background-color: $accent
+		padding: 12px 20px
+		font-size: 13px
+		text-transform: uppercase    
+		font-family: Cuprum
+		text-align: center
+		position: relative
+		outline: none
+		transition: background-color .1s ease
+		&::after
+			transition: background-color .2s ease
+			position: absolute
+			content: ''
+			height: 4px
+			bottom: 0
+			width: 100%
+			background-color: darken($accent, 50%)
+			opacity: .18
+			border-bottom-left-radius: 2px
+			border-bottom-right-radius: 2px
+			left: 0
+		&:focus, &:hover
+			text-decoration: none
+			color: #fff
+		&:hover
+			background-color: lighten($accent, 5%)
+			&::after
+				opacity: .22
+		&:active
+			background-color: darken($accent, 5%)
+			&::after
+				opacity: .32
+
+.navbar
+	background: linear-gradient(0deg, #45af24 0%, #3ab12b 100%)
+	box-shadow: -1px 2px 9px rgba(0, 0, 0, 0.1)
+	padding: 0
+
+.navbar-nav
+	width: 100%	
+	text-transform: uppercase
+	text-align: justify
+	.nav-item
+		display: inline-block
+		.nav-link
+			display: inline-block
+			width: 100%
+			padding: 16px 15px			
+			font-size: 18px
+			text-decoration: none
+			color: #ffffff
+			border-left:  1px solid rgba(#fff, 0.3)
+			&:last-child
+				border-right: 1px solid rgba(#fff, 0.3)
+			&:hover
+				color: $accent
+				background: #ffffff
+
+.btn-search
+	padding: 0
+	margin: 0
+	outline: none
+	border: none
+	color: inherit
+		
 
 @import "media" // Всегда в конце
