@@ -202,8 +202,8 @@ body
     display: block
 	top: 45%
 	background-color: #ffffff
-	width: 25px
-	height: 25px
+	width: 28px
+	height: 28px
 	border: 0
 	cursor: pointer
 	transform: rotate(-45deg)		
@@ -220,22 +220,22 @@ body
 		font-family: fontawesome
 		font-size: 17px	
 .slick-prev
-	right: -12px
+	right: -14px
 	&:after		
 		content: '\f054'		
 		transform: rotate(45deg)
-		bottom: 0    	
-		right: 0
-		top: 5px
+		bottom: 10px   	
+		right: 1px
+		top: 7px
 		
 	
 .slick-next
-	left: -12.5px
+	left: -14px
 	&:after
 		content: '\f053'		
 		transform: rotate(45deg)
-		bottom: 2px
-		left: 1px
+		bottom: 3px
+		left: 5px
 
 // Content section
 
@@ -280,6 +280,7 @@ body
 	box-shadow: 0 0 7px rgba(0, 0, 0, 0.1)
 	background-color: #ffffff
 	text-align: center
+	
 	&__text
 		color: $textColor
 		font-family: Cuprum
@@ -287,24 +288,67 @@ body
 		font-weight: 700
 		text-transform: uppercase
 		margin: 0
-		padding-top: 24px
+		padding: 23px 0 20px
 	&__block
 		display: flex
 	&__item
+		position: relative
 		display: flex
 		flex-direction: column
 		justify-content: flex-end
 		align-items: center
+		
+		&:after
+			position: absolute
+			content: ''
+			display: block
+			background: url('../img/shadow-right.png') no-repeat
+			height: 191px
+			width: 25px
+			right: 0
+			bottom: 0
+			
+		&-noshadow
+			&:after
+				display: none	
 	&__descr
-		padding: 40px 60px
-				
+		padding: 40px 60px				
 		color: $textColor		
 		font-weight: 600
+		margin-bottom: 0
+		&-disable
+			color: #d0d3d8			
 	&__img
 		max-width: 100px
 		height: auto
-		
+	&__arrow
+		position: absolute
+		width: 38px
+		height: 38px
+		border: 2px solid #42a825
+		background-color: #ffffff
+		right: -17px
+		bottom: 45px
+		transform: rotate(45deg)
+		z-index: 1
+		color: $accent
+		&:after
+			position: absolute
+			right: 8px
+			bottom: 10px
+			content: ''
+			display: block
+			background: url('../img/right-arrow.png')
+			width: 18px
+			height: 13px
+			transform: rotate(-45deg)
+		&-disable
+			border: 2px solid #d0d3d8
+			&:after
+				background: url('../img/right-arrow-disable.png')
+
 			
+
 			
 	
 
