@@ -10,12 +10,10 @@ $(document).ready(function(){
 	
 	var slider = $('.slider').slick({
     centerMode: true,
-    autoplay: true,
-    autoplaySpeed: 1500,
-    slidesToShow: 2,
-    speed: 200
+		slidesToShow: 3,
+		arrows: false
   });
-  
+  // scroll panel script
   $('.slider-progress').each(function(i, el) {
     var sliderId = $(el).data('slider'),
         $slider = $('#' + sliderId),

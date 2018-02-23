@@ -45,7 +45,7 @@ body
 	min-width: 320px
 	position: relative
 	color: $textColor
-	line-height: 1.5
+	line-height: 1.45
 	font-family: $default-font
 	overflow-x: hidden
 	opacity: 1
@@ -358,49 +358,86 @@ body
 		text-transform: uppercase
 		font-family: Cuprum
 
-//slider styles
-.track
-  width: 300px
-  position: relative
-  display: block
-  height: 22px
-  border: solid 1px #000
-  overflow: hidden
-  .thumb
-    width: 20px
-    height: 20px
-    top: 1px
-    position: absolute
-    background-color: gray
+// slider style
+
+.slider
+	&__item
+		margin: 0 15px		
+	&__link
+		color: $textColor
+		position: relative
+		transition: all .4s ease
+		&:before
+			position: absolute
+			left: 0
+			bottom: -25px
+			content: '\f04b'
+			display: block
+			font-family: fontawesome
+			text-align: center
+			font-size: 22px
+			line-height: 50px
+			color: #ffffff
+			width: 50px
+			height: 50px
+			background-color: #ffffff
+			background-image: linear-gradient(45deg, $accent 0%, #a2c166 100%)
+			transition: all .4s ease
+		&:hover:before
+			color: $accent			
+			background-image: none
+		&:hover
+			color: $accent				
+	&__title
+		font-size: 16px
+		font-weight: 700
+		padding-left: 64px
+	&__text
+		padding-left: 64px
+		
+.slider-progress 
+  text-align: center
+  margin: 40px 0 60px  
+  &__input 
+    width: 100%
+  
+
+
+input[type=range]
+    -webkit-appearance: none
+
+
+input[type=range]::-webkit-slider-runnable-track 
+    width: 100%
+    height: 3px
+    background: $accent
+    border: none
     border-radius: 3px
-    left: 0
 
-#view
+
+input[type=range]::-webkit-slider-thumb
+  -webkit-appearance: none
+  width: 46px
+  height: 46px
+  border: 2px solid #42a825
+  background: #ffffff
+  margin-top: -4px
+  cursor: pointer
+  transform: rotate(45deg) translateY(-24px)
   position: relative
-  width: 600px
-  height: 220px
-  margin-bottom: 10px
-  overflow: hidden
-  border: solid 1px black
+  
 
-#items
-  margin: 0
-  padding: 10px 0 0
-  position: absolute
-  display: block
-  height: 200px
-  list-style: none none
-  li
-    float: left
-    display: block
-    margin-right: 10px
-    margin-left: 10px
-    padding-top: 90px
-    width: 200px
-    height: 108px
-    text-align: center
-    border: solid 1px gray
-    background-color: #99ccff
+   
+
+
+input[type=range]:focus 
+    outline: none
+
+		
+		
+		
+
+	
 	
 
 
