@@ -245,9 +245,9 @@ body
 	
 		 	
 .content-image
-	position: absolute
-	left: 0
+	position: absolute	
 	top: -88px
+	z-index: 1
 	&__img
 		position: relative
 		display: block
@@ -291,6 +291,7 @@ body
 		padding: 23px 0 20px
 	&__block
 		display: flex
+		padding-bottom: 5px
 	&__item
 		position: relative
 		display: flex
@@ -347,13 +348,60 @@ body
 			&:after
 				background: url('../img/right-arrow-disable.png')
 
-			
 
-			
+// video content section
+.content-name
+	margin-top: 310px
+	&__title
+		font-size: 36px
+		font-weight: 700
+		text-transform: uppercase
+		font-family: Cuprum
+
+//slider styles
+.track
+  width: 300px
+  position: relative
+  display: block
+  height: 22px
+  border: solid 1px #000
+  overflow: hidden
+  .thumb
+    width: 20px
+    height: 20px
+    top: 1px
+    position: absolute
+    background-color: gray
+    border-radius: 3px
+    left: 0
+
+#view
+  position: relative
+  width: 600px
+  height: 220px
+  margin-bottom: 10px
+  overflow: hidden
+  border: solid 1px black
+
+#items
+  margin: 0
+  padding: 10px 0 0
+  position: absolute
+  display: block
+  height: 200px
+  list-style: none none
+  li
+    float: left
+    display: block
+    margin-right: 10px
+    margin-left: 10px
+    padding-top: 90px
+    width: 200px
+    height: 108px
+    text-align: center
+    border: solid 1px gray
+    background-color: #99ccff
 	
 
-		
-
-	
 
 @import "media" // Всегда в конце
