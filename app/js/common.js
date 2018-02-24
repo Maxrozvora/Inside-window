@@ -69,4 +69,12 @@ $(document).ready(function(){
       document.getElementsByClassName("counter__item").innerHTML = "0";
     }
   }, 1000);
+
+  // Tabs bootstrap 
+
+  $('#myTab a').on('click', function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+  })
+  /////////////////////////////////////////////
   });

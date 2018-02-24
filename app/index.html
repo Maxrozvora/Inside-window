@@ -33,7 +33,7 @@
 	<header id="header" class="header">
 		<div class="container">
 			<div class="row d-flex align-items-center top-info">
-				<div class="col-lg-4 col-md-6">
+				<div class="col-lg-3 col-md-6">
 					<div class="logo">
 						<img src="img/logo.png" alt="inside window" class="logo__img">
 						<span class="logo__text">inside windows</span>
@@ -48,9 +48,9 @@
 				<div class="col-lg-2 col-md-6">
 					<span class="telephone">+ 38 (044) 812-23-12</span>
 				</div>
-				<div class="col-lg-2 col-md-6">
+				<div class="col-lg-3 col-md-6">
 					<div class="btn-block">
-						<button class="btn-block__btn">Заказать звонок</button>
+						<button class="button button-header"><i class="fa fa-phone" aria-hidden="true"></i> Заказать звонок</button>
 					</div>
 				</div>
 			</div>
@@ -212,11 +212,63 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<div class="content-name text-center">
-						<h3 class="content-name__title">Каталог окон</h3>
+					<div class="content-title text-center">
+						<h3 class="content-title__text">Каталог окон</h3>
 					</div>
 				</div>
+				
 			</div>
+			<div class="row">
+					<div class="col-md-12">
+							<div class="catalog-nav">
+									<ul class="nav" id="myTab" role="tablist">
+											<li class="nav__item">
+											  <a class="nav__link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Глухие</a>
+											</li>
+											<li class="nav__item">
+											  <a class="nav__link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Открывное - Откидное</a>
+											</li>
+											<li class="nav__item">
+											  <a class="nav__link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Глухое - Открывное</a>
+											</li>
+											<li class="nav__item">
+													<a class="nav__link" id="vitraj-tab" data-toggle="tab" href="#vitraj" role="tab" aria-controls="vitraj" aria-selected="false">Витраж</a>
+												  </li>
+										  </ul>
+							</div>
+					</div>
+				</div>
+				<div class="row">
+						<div class="col-md-12">
+								<div class="tab-content" id="myTabContent">
+										<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+											<div class="catalog-slider">
+												<div class="card">
+														<div class="card__images">
+															<div class="card__main-img">
+																<img src="img/card/1.jpg" alt="inside windows" class="card__img img-responsive">
+																<div class="card__min-images">
+																	<img src="img/card/small-1.jpg" alt="inside windows" class="card__min-img">
+																	<img src="img/card/small-2.jpg" alt="inside windows" class="card__min-img">
+																	<img src="img/card/small-3.jpg" alt="inside windows" class="card__min-img">
+																</div>
+															</div>
+														</div>
+														<div class="card__descr">
+															<h4 class="card__title">Окно Глухое</h4>
+															<span class="card__price">от <span class="card__price-big">3000</span> грн</span>
+																	<button class="button">калькулятор</button>
+																
+														</div>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...2</div>
+										<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...3</div>
+										<div class="tab-pane fade" id="vitraj" role="tabpanel" aria-labelledby="vitraj-tab">...4</div>
+									  </div>
+						</div>
+				</div>
 		</div>
 	</section>
 	<link rel="stylesheet" href="css/main.min.css">
