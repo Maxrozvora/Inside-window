@@ -509,6 +509,7 @@ input[type=range]:focus
 .catalog
 	padding: 40px 0
 	background: url('../img/bacground.jpg')
+	border-bottom: 1px solid rgba(#000000, .1)
 
 .catalog-nav
 	display: flex
@@ -576,6 +577,147 @@ input[type=range]:focus
 			font-weight: 700
 			text-transform: uppercase
 
+// popular section styles
+
+.popular
+	padding: 40px 0
+	background: url('../img/bacground.jpg')
+
+.descrition
+	padding: 30px 0
+	padding-left: 19px
+	background-color: #fff
+
+.room-slider
+	width: 100%
+	&__nav
+		width: 250px
+		margin-left: 50px
+		padding-top: 15px
+		.slick-next, .slick-prev
+			background-color: transparent
+			&:hover
+				color: $accent
+	&__img
+		width: 73px
+		height: 57px
+		margin:  0 7px
+	&__img-for
+		width: 299px
+		height: 247px
+
+.detail
+	padding: 0 20px
+	&__title
+		font-size: 16px
+		font-weight: 700
+		margin-bottom: 22px
+
+.info
+	box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.05)
+	background-color: #ffffff
+	margin-bottom: 20px
+	padding-bottom: 30px
+	display: flex
+	align-items: center
+	flex-direction: column
+	position: relative
+	&__action
+		position: absolute
+		display: block
+		top: -10px
+		width: 82px
+		height: 35px
+		text-transform: uppercase
+		font-size: 16px
+		font-weight: 700
+		color: #ffffff
+		text-align: center
+		line-height: 35px
+		
+		&:after
+			position: absolute
+			content: ''
+			display: block
+			left: -5px
+			bottom: 20px
+			width: 10px
+			height: 15px
+			background: url("../img/shadow.png") no-repeat 
+		
+		
+
+		background-color: #f15858
+	&__title
+		font-size: 16px
+		font-weight: 700
+		margin-top: 50px
+		margin-bottom: 24px
+		&__img
+			width: 100px
+			height: auto
+		
+.amount
+	box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.05)
+	background-color: #ffffff
+	display: flex
+	align-items: center
+	flex-direction: column
+	padding: 30px
+	&__title
+		position: relative
+		font-family: Roboto
+		font-size: 16px
+		font-weight: 700
+	&__price
+		display: block
+		font-size: 16px
+		font-weight: 700
+		margin-bottom: 6px
+		&-big
+			font-family: Cuprum
+			font-size: 36px
+			font-weight: 700
+			text-transform: uppercase
+	
+// Fotter styles
+
+.map
+	min-height: 520px
+	position: relative
+
+.bellow
+	position: absolute
+	bottom: 0
+	padding:  30px 20px 20px
+	box-shadow: -3px 4px 10px rgba(0, 0, 0, 0.15)
+	background-color: #ffffff
+	display: flex
+	flex-direction: column
+	align-items: center
+	width: 100%
+	&__logo
+		padding-bottom: 30px
+	&__nav
+		display: flex
+		justify-content: space-between
+		padding: 30px 0		
+		border-top: 1px solid rgba(#000000, .1)
+		border-bottom: 1px solid rgba(#000000, .1)
+	&__list
+		list-style-type: none
+		margin: 0
+		
+	&__link
+		color: $textColor
+		line-height: 22px
+		&:hover
+			color: $accent
+	&__contacts
+		padding-top: 30px
+		
+		.telephone
+			padding: 0
 
 
 @import "media" // Всегда в конце
