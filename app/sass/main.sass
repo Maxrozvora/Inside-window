@@ -351,7 +351,8 @@ body
 
 // video content section
 .content-name
-	margin-top: 310px
+	&-margin
+		margin-top: 310px
 	&__title
 		font-size: 36px
 		font-weight: 700
@@ -434,11 +435,67 @@ input[type=range]:focus
     outline: none
 
 		
+// action section styles
+.action
+	background: url('../img/action-bg.jpg') center no-repeat
+	background-size: cover		
 		
-		
+.timer
+	&__title
+		color: #ffffff
+		font-family: Cuprum
+		margin-top: 28px
+		margin-bottom: 18px
+		font-size: 36px
+		font-weight: 700
+		text-transform: uppercase
+	&__descr
+		color: #ffffff		
+		font-size: 14px
+		font-weight: 400
+		display: block
+	&__link
+		color: #fff600		
+		font-size: 16px
+		font-weight: 700
+		display: block
+		margin-bottom: 30px
+		text-decoration: underline		
+		&:hover
+			color: #fff600
+
 
 	
 	
+// counter styles
+.counter
+	padding: 10px 0 40px
+
+.counter
+    display: flex	
+    &__items
+        margin-left: 20px 
+        background-color: #fff
+        width: 85px
+        height: 100px
+        box-shadow: -3px 5px 16px rgba(0, 0, 0, 0.09)
+        background-color: #ffffff   
+    &__item
+        font-size: 56px
+        font-weight: 700
+        text-transform: uppercase
+        font-family: Cuprum
+        text-align: center
+        color: $accent
+        margin-bottom: -13px
+    &__val
+        text-align: center
+        padding: 4px
+		
+// catalog styles
+.catalog
+	padding: 40px 0
+	background: url('../img/bacground.jpg')
 
 
 @import "media" // Всегда в конце
