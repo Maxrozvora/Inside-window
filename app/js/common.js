@@ -76,11 +76,40 @@ $(document).ready(function(){
     e.preventDefault()
     $(this).tab('show')
   })
+
+  $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+    $('.catalog-slider1').slick('reinit');
+    $('.catalog-slider2').slick('reinit');
+    $('.catalog-slider3').slick('reinit');
+    $('.catalog-slider4').slick('reinit');
+  })
   /////////////////////////////////////////////
 
   // Catalog section slider
+  
 
-  $('.catalog-slider').slick({
+  $('.catalog-slider1').slick({
+    infinite: true,
+		slidesToShow: 4,
+    slidesToScroll: 1,
+    nextArrow: '<button type="button" class="slick-prev"></button>',
+		prevArrow: '<button type="button" class="slick-next"></button>'
+  });
+  $('.catalog-slider2').slick({
+    infinite: true,
+		slidesToShow: 4,
+    slidesToScroll: 1,
+    nextArrow: '<button type="button" class="slick-prev"></button>',
+		prevArrow: '<button type="button" class="slick-next"></button>'
+  });
+  $('.catalog-slider3').slick({
+    infinite: true,
+		slidesToShow: 4,
+    slidesToScroll: 1,
+    nextArrow: '<button type="button" class="slick-prev"></button>',
+		prevArrow: '<button type="button" class="slick-next"></button>'
+  });
+  $('.catalog-slider4').slick({
     infinite: true,
 		slidesToShow: 4,
     slidesToScroll: 1,
@@ -88,8 +117,9 @@ $(document).ready(function(){
 		prevArrow: '<button type="button" class="slick-next"></button>'
   });
   ///////////////////////////////////////////////////
+// Tooltip
 
-  // Slider for popular section 
+   // Slider for popular section 
   $('.room-slider__for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,

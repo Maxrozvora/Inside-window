@@ -523,6 +523,9 @@ input[type=range]:focus
 			padding: 15px 25px
 			text-decoration: none
 			margin-right: 1px
+			&.active
+				padding: 13px 23px
+				border: 2px solid $accent
 			&:hover
 				padding: 13px 23px
 				border: 2px solid $accent
@@ -532,7 +535,7 @@ input[type=range]:focus
 
 // catalog slider styles
 
-.catalog-slider
+.catalog-slider1, .catalog-slider2, .catalog-slider3, .catalog-slider4
 	.slick-next, .slick-prev
 		background-color: transparent
 		&:hover
