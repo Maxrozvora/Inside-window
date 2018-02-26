@@ -29,7 +29,7 @@ gulp.task('js', ['common-js'], function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'node_modules/bootstrap/dist/js/bootstrap.min.js',
-		'app/libs/slick-carousel/slick/slick.min.js',		
+		'app/libs/slick-carousel/slick/slick.min.js',					
 		'app/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))

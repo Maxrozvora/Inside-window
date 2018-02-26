@@ -163,3 +163,5 @@ $(document).ready(function(){
 // Запускаем карту при загрузки страницы
 google.maps.event.addDomListener(window, 'load', initMap); 
   });
+
+  
