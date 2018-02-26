@@ -11,7 +11,20 @@ $(document).ready(function(){
 	var slider = $('.slider').slick({
     centerMode: true,
 		slidesToShow: 3,
-		arrows: false
+    arrows: false,
+    responsive: [{
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
   });
   // scroll panel script
   $('.slider-progress').each(function(i, el) {
@@ -88,34 +101,33 @@ $(document).ready(function(){
   // Catalog section slider
   
 
-  $('.catalog-slider1').slick({
+  $('.catalog-slider1, .catalog-slider2, .catalog-slider3, .catalog-slider4').slick({
     infinite: true,
 		slidesToShow: 4,
     slidesToScroll: 1,
     nextArrow: '<button type="button" class="slick-prev"></button>',
-		prevArrow: '<button type="button" class="slick-next"></button>'
+    prevArrow: '<button type="button" class="slick-next"></button>',
+    responsive: [{
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
   });
-  $('.catalog-slider2').slick({
-    infinite: true,
-		slidesToShow: 4,
-    slidesToScroll: 1,
-    nextArrow: '<button type="button" class="slick-prev"></button>',
-		prevArrow: '<button type="button" class="slick-next"></button>'
-  });
-  $('.catalog-slider3').slick({
-    infinite: true,
-		slidesToShow: 4,
-    slidesToScroll: 1,
-    nextArrow: '<button type="button" class="slick-prev"></button>',
-		prevArrow: '<button type="button" class="slick-next"></button>'
-  });
-  $('.catalog-slider4').slick({
-    infinite: true,
-		slidesToShow: 4,
-    slidesToScroll: 1,
-    nextArrow: '<button type="button" class="slick-prev"></button>',
-		prevArrow: '<button type="button" class="slick-next"></button>'
-  });
+  
   ///////////////////////////////////////////////////
 // Tooltip
 

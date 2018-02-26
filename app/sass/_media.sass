@@ -3,12 +3,33 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
+@media only screen and (max-width : 1024px)
+	.navbar-nav .nav-item .nav-link 
+		padding: 17px 8px
+		font-size: 16px
+	
+	.top-text__text 
+    	padding-left: 17%
 
+	.card__min-images 
+		display: flex
+		justify-content: space-around
+	img.card__min-img 
+		width: 33%
+		height: auto
+	.slick-slide 
+		img
+			margin: 0 1px
+
+
+	
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
+	.top-text
+		text-align: right
+	.telephone
+		padding-left: 0
 	body 
 		font-size:  12px
 	.telephone
@@ -16,10 +37,10 @@
 	.btn-block__btn
 		font-size: 12px
 		margin: 0 auto
-	.top-info
-		
 
-
+	.info
+		margin-top: 20px
+	
 	.navbar-nav
 		.nav-item
 			text-align: center
@@ -27,10 +48,39 @@
 			.nav-link
 				font-size: 14px
 
+	.content-image
+		display: none
+
+	.slick-slide 
+		img 
+			margin: 0 auto
+	
+
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+	.logo
+		justify-content: center
+	.catalog-nav .nav__link
+		font-size: 14px
+		padding: 12px 12px
+		&:hover
+			font-size: 14px
+    		padding: 12px 12px
 
+	.descrition 
+    	padding: 30px 19px
+
+	.detail__title 
+    	margin-top: 15px
+
+	.footer
+		background: url('../img/bacground.jpg')
+	.bellow
+		position: static
+		&__list     
+			display: flex
+			justify-content: space-around
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
@@ -38,6 +88,9 @@
     	left: -8px
 	.slick-prev 
     	right: -8px
+
+	.content-name-margin 
+    	margin-top: -30px
 
 	.content-image
 		display: none
@@ -51,8 +104,15 @@
 			right: 9px
 			bottom: 30px
 
+	.catalog-nav .nav__link 
+		font-size: 12px
+		padding: 10px 11px
 
 
+	.img.card__min-img 
+		width: 33%
+		height: auto
+		padding: 1px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)

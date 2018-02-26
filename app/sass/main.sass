@@ -59,6 +59,8 @@ body
 .text-center
 	text-align: center
 
+.navbar-toggler
+	color: #ffffff
 
 // Header section
 .top-info
@@ -568,7 +570,7 @@ input[type=range]:focus
 		&:after
 			position: absolute
 			top: 41px
-			left: 85px
+			left: 35%
 			content: ''
 			width: 59px
 			height: 3px
@@ -598,19 +600,29 @@ input[type=range]:focus
 	width: 100%
 	&__nav
 		width: 250px
-		margin-left: 50px
+		margin: 0 auto
 		padding-top: 15px
 		.slick-next, .slick-prev
 			background-color: transparent
 			&:hover
 				color: $accent
+		.slick-next
+			&:after
+				left: -8px
+				bottom: 20px
+		.slick-prev
+			&:after
+				bottom: -4px
+				right: -16px
+				top: 22px
+
 	&__img
 		width: 73px
 		height: 57px
 		margin:  0 7px
 	&__img-for
-		width: 299px
-		height: 247px
+		width: 100%
+		height: auto
 
 .detail
 	padding: 0 20px
@@ -684,7 +696,7 @@ input[type=range]:focus
 	&__title
 		font-size: 16px
 		font-weight: 700
-		margin-top: 50px
+		margin-top: 44px
 		margin-bottom: 24px
 		&__img
 			width: 100px
@@ -702,11 +714,12 @@ input[type=range]:focus
 		font-family: Roboto
 		font-size: 16px
 		font-weight: 700
+		margin-bottom: 0
 	&__price
 		display: block
 		font-size: 16px
 		font-weight: 700
-		margin-bottom: 6px
+		margin-bottom: 7px
 		&-big
 			font-family: Cuprum
 			font-size: 36px
@@ -721,8 +734,7 @@ input[type=range]:focus
 
 .bellow
 	position: absolute
-	bottom: 0
-	padding:  30px 20px 20px
+	bottom: 0	
 	box-shadow: -3px 4px 10px rgba(0, 0, 0, 0.15)
 	background-color: #ffffff
 	display: flex
@@ -730,24 +742,28 @@ input[type=range]:focus
 	align-items: center
 	width: 100%
 	&__logo
-		padding-bottom: 30px
-	&__nav
-		display: flex
-		justify-content: space-between
-		padding: 30px 0		
+		padding: 30px
+	&__nav		
+		padding: 30px 0	
+		width: 100%	
 		border-top: 1px solid rgba(#000000, .1)
 		border-bottom: 1px solid rgba(#000000, .1)
 	&__list
 		list-style-type: none
 		margin: 0
-		
+		padding: 0
+		white-space: nowrap
+		&:first-child
+			padding-left: 20px
 	&__link
 		color: $textColor
 		line-height: 22px
 		&:hover
 			color: $accent
 	&__contacts
-		padding-top: 30px
+		padding: 30px 10px
+		display: flex
+		justify-content: space-between
 		
 		.telephone
 			padding: 0
